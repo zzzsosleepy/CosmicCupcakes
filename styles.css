@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    --head1: 48px;
+    --head2: 36px;
+    --head3: 30px;
+    --para: 14px;
+    --clr100: #e6e6e6;
+    --clr200: #fadde1;
+    --clr300: #ffa6c1;
+    --clr400: #ff87ab;
+    --clr500: #ff5d8f;
+    --clr600: #000000;
+    --fnt-primary: "Montserrat";
+    --fnt-secondary: "Amiri";
+}
+
+body {
+    margin: 0;
+    background-color: var(--clr200);
+}
+
+/* NAV SECTION -------------------------------- */
+
+nav {
+    display: flex;
+    align-items: center;
+    background-color: var(--clr600);
+    padding-inline: 25px;
+    padding-block: 12px;
+    justify-content: space-between;
+}
+
+nav img {
+    max-width: 150px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: var(--fnt-primary);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--clr500);
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: var(--clr100);
+}
+
+/* NAV SECTION END-------------------------------- */
+
+/* HERO SECTION -------------------------------- */
+.hero {
+    background-image: url(img/hero1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    max-width: 600px;
+    margin-bottom: 25px;
+}
+
+.hero-title {
+    font-family: var(--fnt-primary);
+    font-size: var(--head1);
+    font-weight: bolder;
+}
+
+.hero-description {
+    color: var(--clr100);
+    font-family: var(--fnt-secondary);
+    font-size: var(--head3);
+    font-weight: bolder;
+    width: 40%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.scroll-button {
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-family: var(--fnt-primary);
+    font-size: var(--head3);
+    font-weight: bolder;
+    border-radius: 15px;
+    padding-block: 15px;
+    padding-inline: 25px;
+    cursor: pointer;
+    background-color: var(--clr500);
+    color: var(--clr600);
+    transition: background-color 0.2s ease;
+}
+
+.scroll-button:hover {
+    background-color: var(--clr200);
+}
+
+/* HERO SECTION END-------------------------------- */
+
+/* GALLERY SECTION START-------------------------------- */
+
+.gallery-container {}
+
+.gallery {}
+
+.desserts {}
+
+.dessert-item {}
+
+/* GALLERY SECTION END-------------------------------- */
+
+/* FOOTER SECTION START-------------------------------- */
+
+footer {}
+
+/* FOOTER SECTION END-------------------------------- */
