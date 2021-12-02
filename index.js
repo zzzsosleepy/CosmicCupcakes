@@ -8,13 +8,20 @@ let galleryCTAButton = document.getElementById("productsCTA");
 let navBar = document.getElementById("navBar");
 let navLogo = document.getElementById("navLogo");
 
+//Populate the navLinks array with the nav links
 let navLinks = [];
 navLinks.push(document.getElementById("navHome"));
 navLinks.push(document.getElementById("navProducts"));
-navLinks.push(document.getElementById("navContact"));
 
+//Enable dynamic nav link color
 let navLinkDefaultColor = navLinks[0].style.color;
 let navLinkAltColor = "var(--clr100)";
+
+//Set the product button to the corresponding navLinks index
+let productButton = navLinks[1];
+
+//Scroll to gallery when product button in navbar is clicked
+productButton.addEventListener("click", function () { galleryFunction(); });
 
 // When the user scrolls down 50px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
@@ -53,7 +60,7 @@ function galleryFunction() {
     })
 }
 
-//SET UP AND DISPLAY LOADING SCREEN 
+//Set up and display the loading screen
 const loader = document.querySelector(".loader");
 window.onload = function () {
     setTimeout(function () {
